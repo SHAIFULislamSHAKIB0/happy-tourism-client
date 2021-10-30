@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "days": "5 days",
+        "price": 1500,
+        "name": "London",
+        "country": "England",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT1Sc2XPP1kcDnnGf7-KWTl3kfKf0mw9Plw&usqp=CAU",
+        "des": "Welcome to London! Discover the best of London with Visit London, the official guide to England’s exciting capital. Find things to do in London, from iconic sightseeing spots and fun-filled days out to top restaurants, theatre and unmissable London events. If you’re not able to visit just yet, plan ahead to make the most of your next visit."
+    },
+    {
+        "id": 2,
+        "days": "7 days",
+        "price": 1000,
+        "name": "California",
+        "country": "USA",
+        "img": "https://media.istockphoto.com/photos/coastline-of-central-california-at-dusk-picture-id872542466?k=20&m=872542466&s=612x612&w=0&h=fPVrazeuxBPBPtzAkJMOByhp5GIpDE4RjUv1dwvtZuY=",
+        "des": "One of the most popular destinations in all of North America, California is famous for the Golden Gate Bridge, Disneyland, and Hollywood. Other things unique to California are Coachella, the Wine Country, Silicon Valley, and Surf Culture, in addition to less obvious sights and cultural aspects"
+    },
+    {
+        "id": 3,
+        "days": "5 days",
+        "price": 500,
+        "name": "Korola Megna",
+        "country": "USA",
+        "img": "https://technext.github.io/travelo/img/place/2.png",
+        "des": "A river is a ribbon-like body of water that flows downhill from the force of gravity. A river can be wide and deep, or shallow enough for a person to wade across. ... The other end of a river is called its mouth, where water empties into a larger body of water, such as a lake or ocean."
+    },
+    {
+        "id": 4,
+        "days": "4 days",
+        "price": 500,
+        "name": "Miami Beach",
+        "country": "USA",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LiPWp8FA4c0ykEM_XP5cOE_wTNTXol1NhA&usqp=CAU",
+        "des": "Be happy because you have this wonderful life so live like that everyone remembers you when you are not there."
+    },
+    {
+        "id": 5,
+        "days": "7 days",
+        "price": 2500,
+        "name": "Saint Martin",
+        "country": "BD",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/75/48/73/the-saint-martin-s-island.jpg?w=500&h=300&s=1",
+        "des": "Every traveler should have a tour plan to visit this beautiful tourism spot of Bandarban at least once and then they will feel to visit that travel spot again and again."
+    },
+    {
+        "id": 6,
+        "days": "10 days",
+        "price": 2000,
+        "name": "NafaKum Bandarban",
+        "country": "BD",
+        "img": "https://thumbs.dreamstime.com/b/beautiful-natural-place-nafakhum-bandarban-chittagong-bangladesh-180219431.jpg",
+        "des": "Nafakhum is one of the most beautiful waterfalls in Bangladesh and an excellent place to travel. Every traveler should have a tour plan to visit this beautiful tourism spot of Bandarban at least once and then they will feel to visit that travel spot again and again."
+    }
+]
