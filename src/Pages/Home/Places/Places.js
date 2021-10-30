@@ -6,7 +6,7 @@ const Places = () => {
     const [places, setPlaces] = useState([])
 
     useEffect(() => {
-        fetch('places.json')
+        fetch('http://localhost:5000/places')
             .then(res => res.json())
             .then(data => setPlaces(data))
     }, [])
@@ -20,7 +20,7 @@ const Places = () => {
             </div>
             <div className="row">
                 {
-                    places.map(place => <Place key={place.id} place={place}></Place>)
+                    places.map(place => <Place key={place._id} place={place}></Place>)
                 }
 
             </div>

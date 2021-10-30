@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Place.css'
 
 const Place = (props) => {
-    const { id, name, img, des, price, country, days } = props.place;
+    const { _id, name, img, des, price, country, days } = props.place;
 
     const description = des.slice(0, 70)
     return (
@@ -19,7 +19,9 @@ const Place = (props) => {
                     <h6>Price: ${price}</h6>
                     <h6>For: {days}</h6>
                 </div>
-                <Link to={`/booking/${id}`}><button className="contact-btn">Book Now</button></Link>
+
+                <Link to={`/booking/${_id}`}><button className="contact-btn">Book Now</button></Link>
+
                 <div className="container d-flex justify-content-center align-items-center mt-4">
                     <small><p>{country}</p></small>
 
