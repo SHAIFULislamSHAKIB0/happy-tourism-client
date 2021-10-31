@@ -45,9 +45,11 @@ function App() {
             <PrivateRoute path="/manageplace">
               <ManagePlaces></ManagePlaces>
             </PrivateRoute>
+
             <PrivateRoute path="/myorders">
               <MyOrders></MyOrders>
             </PrivateRoute>
+
             <PrivateRoute path="/manageAllOrders">
               <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>

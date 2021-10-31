@@ -11,19 +11,23 @@ const ManagePlaces = () => {
     }, [])
 
     const handleDelete = (id) => {
-        const url = `https://fathomless-bayou-46817.herokuapp.com/places/${id}`
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                if (data.deletedCount) {
-                    alert('data deleted successfully')
-                    const remaining = places.filter(place => place._id !== id)
-                    setPlaces(remaining)
-                }
+        const proceed = window.confirm('Are you sure,you want to delete?')
+
+        if (proceed) {
+            const url = `https://fathomless-bayou-46817.herokuapp.com/places/${id}`
+            fetch(url, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    if (data.deletedCount) {
+                        alert('data deleted successfully')
+                        const remaining = places.filter(place => place._id !== id)
+                        setPlaces(remaining)
+                    }
+                })
+        }
     }
 
     return (

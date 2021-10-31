@@ -14,19 +14,23 @@ const MyOrders = () => {
     }, [])
 
     const handleDelete = (id) => {
-        const url = `https://fathomless-bayou-46817.herokuapp.com/orders/${id}`
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                if (data.deletedCount) {
-                    alert('Order deleted successfully')
-                    const remaining = orders.filter(place => place._id !== id)
-                    setOrders(remaining)
-                }
+        const proceed = window.confirm('Are you sure,you want to delete?')
+
+        if (proceed) {
+            const url = `https://fathomless-bayou-46817.herokuapp.com/orders/${id}`
+            fetch(url, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    if (data.deletedCount) {
+                        alert('Order deleted successfully')
+                        const remaining = orders.filter(place => place._id !== id)
+                        setOrders(remaining)
+                    }
+                })
+        }
     }
 
 
