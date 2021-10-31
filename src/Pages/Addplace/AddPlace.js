@@ -8,7 +8,7 @@ const AddPlace = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         // console.log(data)
-        axios.post('http://localhost:5000/places', data)
+        axios.post('https://fathomless-bayou-46817.herokuapp.com/places', data)
             .then(res => {
                 // console.log(res)
                 if (res.data.insertedId) {

@@ -5,13 +5,13 @@ const ManagePlaces = () => {
     const [places, setPlaces] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://fathomless-bayou-46817.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setPlaces(data))
     }, [])
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/places/${id}`
+        const url = `https://fathomless-bayou-46817.herokuapp.com/places/${id}`
         fetch(url, {
             method: 'DELETE'
         })

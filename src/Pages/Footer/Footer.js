@@ -67,6 +67,18 @@ const Footer = () => {
                                     <Link to="/home" className="nav-link"><li className="items p-2">Home</li></Link>
 
                                     <Link to="/places" className="nav-link"><li className="items  p-2">Places</li></Link>
+                                    {
+                                        user?.email && <Link to="/addplace" className="nav-link"><li className="items  p-2">addPlaces</li></Link>
+                                    }
+
+                                    {
+                                        user?.email && <Link to="/manageplace" className="nav-link"><li className="items  p-2">managePlaces</li></Link>
+                                    }
+                                    {
+                                        user?.email && <Link to="/myorders" className="nav-link"><li className="items  p-2">myOrders</li></Link>
+                                    }
+
+
 
                                     {
                                         user.email ? <Button onClick={logOut} variant="light">LogOut</Button> :

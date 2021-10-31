@@ -1,15 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 import Place from '../Place/Place';
 import './Places.css'
 
 const Places = () => {
     const [places, setPlaces] = useState([])
 
+
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://fathomless-bayou-46817.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setPlaces(data))
     }, [])
+
+    const { isLoading } = useAuth();
+    if (isLoading) {
+        return <Spinner animation="border" variant="success" />
+    }
 
 
     return (

@@ -13,14 +13,14 @@ const Booking = () => {
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/places/${placeId}`)
+        fetch(`https://fathomless-bayou-46817.herokuapp.com/places/${placeId}`)
             .then(res => res.json())
             .then(data => setPlace(data))
     }, [])
 
     const onSubmit = data => {
         // console.log(data)
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://fathomless-bayou-46817.herokuapp.com/orders', data)
             .then(res => {
                 // console.log(res)
                 if (res.data.insertedId) {
