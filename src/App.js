@@ -13,6 +13,7 @@ import Footer from './Pages/Footer/Footer';
 import AddPlace from './Pages/Addplace/AddPlace';
 import ManagePlaces from './Pages/ManagePlaces/ManagePlaces';
 import MyOrders from './Pages/MyOrders/MyOrders';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 
 
 function App() {
@@ -38,15 +39,18 @@ function App() {
             <PrivateRoute path="/booking/:placeId">
               <Booking></Booking>
             </PrivateRoute>
-            <Route path="/addplace">
+            <PrivateRoute path="/addplace">
               <AddPlace></AddPlace>
-            </Route>
-            <Route path="/manageplace">
+            </PrivateRoute>
+            <PrivateRoute path="/manageplace">
               <ManagePlaces></ManagePlaces>
-            </Route>
-            <Route path="/myorders">
+            </PrivateRoute>
+            <PrivateRoute path="/myorders">
               <MyOrders></MyOrders>
-            </Route>
+            </PrivateRoute>
+            <PrivateRoute path="/manageAllOrders">
+              <ManageAllOrders></ManageAllOrders>
+            </PrivateRoute>
 
             <Route path="*">
               <NotFound></NotFound>

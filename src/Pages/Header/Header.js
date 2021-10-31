@@ -24,6 +24,9 @@ const Header = () => {
                         {
                             user?.email && <Nav.Link as={Link} to="/myorders">myOrders</Nav.Link>
                         }
+                        {
+                            user?.email && <Nav.Link as={Link} to="/manageAllOrders">manageAllOrders</Nav.Link>
+                        }
 
 
                         {user?.email ?
